@@ -1,47 +1,72 @@
-\documentclass{scrartcl}
+\documentclass{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage{hyperref}
-\usepackage{url}
-\usepackage{graphicx}
-\usepackage{amssymb}
-\usepackage[T1]{fontenc}
-\usepackage{blkarray}
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage{biblatex}
-\addbibresource{bibliography.bib} 
+\usepackage{natbib}
+\usepackage{soul}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[hyphens]{url}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{glossaries}
+\usepackage{hyperref}
+\usepackage{acronym}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{comment}
 
 
 \newcommand{\emailaddr}[1]{\href{mailto:#1}{\texttt{#1}}}
 
-
-\title{TITLE
-\\
-SUBTITLE
-\\
-\begin{small} 
-  Report finale per il corso di ???  - 
-  LM Ingegneria e Scienze Informatiche
-\end{small}
-}
-\author{
-    \emailaddr{author1@studio.unibo.it}
-    \and
-    \emailaddr{author2@studio.unibo.it}
-}
-\date{\today}
-
 \begin{document}
+\begin{titlepage}
 
-\maketitle
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+  \center
+  
+  \textsc{\Large Department of Computer Science And Engineering}\\[0.5cm]
+  
+  \textsc{\Large University of Bologna}\\[0.6cm]
+  
+  \hrule width \hsize \kern 1mm \hrule width \hsize height 2pt 
+  \vspace{0.8cm}
+  { \large \bfseries DealerPro}\\[0.6cm]
+  { \large \bfseries Descrizione dell'approccio utilizzato}\\[0.6cm]
+  { \large Project Management}\\[0.6cm]
+  
+  
+  {\bfseries{June, 2023}
+  \hfill
+  \bfseries{Davide Domini}}\\[0.6cm]
+  
+  \hrule width \hsize height 2pt \kern 1mm \hrule width \hsize height 1pt
+  \vspace{0.4cm}
+  %\begin{abstract}
+  %\end{abstract}
+  
+  \end{titlepage}
+  %%GLOSSARIO https://it.overleaf.com/project/646f34c78c7d27e771d0078f
+  \clearpage
 
-\newpage
+  \tableofcontents
 
-\addcontentsline{toc}{section}{Bibliography}
-%\bibliographystyle{unsrt}
-%\bibliography{bibliografia}
-\printbibliography %Prints bibliography
+  \newpage
+  
+  \section{Scoping/Initiation}
+
+  \section{Planning}
+
+  \section{Launching/Execution}
+
+  \section{Monitoring/Controlling}
+
+  \section{Closing}
+
+
 
 
 \end{document}

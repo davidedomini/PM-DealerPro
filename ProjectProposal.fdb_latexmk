@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1688045346 "/Users/davidedomini/Desktop/PM-DealerPro/ProjectProposal.tex" "ProjectProposal.pdf" "ProjectProposal" 1688045347
-  "/Users/davidedomini/Desktop/PM-DealerPro/ProjectProposal.tex" 1688045346 3017 ec0efae6e971568ae27cf9b89c058b4f ""
+["pdflatex"] 1688046180 "/Users/davidedomini/Desktop/PM-DealerPro/ProjectProposal.tex" "ProjectProposal.pdf" "ProjectProposal" 1688046181
+  "/Users/davidedomini/Desktop/PM-DealerPro/ProjectProposal.tex" 1688046180 3757 2c15fc657c3697e1bfa4d3101a55f3eb ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -130,10 +130,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653252013 2826442 3312d3343e9229fb9b017370c5a98242 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "ProjectProposal.aux" 1688045347 1806 39ba276177fb889f93b065b5adb61b54 "pdflatex"
-  "ProjectProposal.out" 1688045347 1056 b5ea89a025f60f07eb4e94b18f89ac1f "pdflatex"
-  "ProjectProposal.tex" 1688045346 3017 ec0efae6e971568ae27cf9b89c058b4f ""
-  "ProjectProposal.toc" 1688045347 663 e6077676a1772e11bffe672403aee9c1 "pdflatex"
+  "ProjectProposal.aux" 1688046181 1806 2682585f00f05eb82511ef7ae9b91914 "pdflatex"
+  "ProjectProposal.out" 1688046181 1056 b5ea89a025f60f07eb4e94b18f89ac1f "pdflatex"
+  "ProjectProposal.tex" 1688046180 3757 2c15fc657c3697e1bfa4d3101a55f3eb ""
+  "ProjectProposal.toc" 1688046181 663 01f3cb2e835557ac8daef5c28c937ea1 "pdflatex"
   (generated)
   "ProjectProposal.aux"
   "ProjectProposal.log"

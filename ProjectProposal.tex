@@ -107,8 +107,10 @@
 
   \subsection{Business}
   
-  Per il progetto si prevede un modello di business in cui il software verrà installato in locale
-    presso la sede del cliente. Il software verrà venduto con un modello di licenza annuale.
+  Per il progetto si prevede un modello di business in cui il software verrà installato in cloud. 
+    Questa scelta deriva dal fatto che l'infrastruttura IT interna della concessionaria è limitata e obsoleta,
+    inoltre, il cliente non è intenzionato ad effettuare investimenti consistenti in questo ambito.
+    Il software verrà venduto con un modello di licenza annuale.
     Eventuali future modifiche e/o aggiunte richieste dal cliente verranno valutate e preventivate a parte.
     Si specifica che la proprietà del software rimarrà sempre del team di sviluppo che potrà riutilizzarlo tutto 
     o in parte anche per progetti futuri.
@@ -144,7 +146,30 @@
     del dominio applicativo. Viste tutte queste motivazioni si è optato per l'approccio
     \emph{Evolutionary Development Waterfall}.
     Il lavoro verrà suddiviso in sprint di durata settimanale.
-  \subsection{Workflow}
+
+  \subsection{Attività automatizzabili}
+
+  Sono state identificate tutta una serie di attività che è possibile automatizzare. Questo ha un impatto positivo
+  inquanto permette di: ridurre il lavoro del team di sviluppo, ridurre i tempi morti, promuovere l'eccellenza
+  tecnica del prodotto e ridurre i rischi di integrazione durante i vari sprint. Queste sono:
+  
+  \begin{itemize}
+    \item \textbf{Testing}: verrà utilizzato un approccio \emph{Test Driven Development (TDD)} per lo sviluppo e
+      sarà necessario che tutti questi test diano esito positivo per poter procedere all'integrazione di una nuova
+      feature;
+    \item \textbf{Gestione del codice}: il codice verrà gestito tramite un sistema di versionamento (Git) e verrà
+      utilizzato l'approccio \emph{GitFlow} per la gestione dei branch. Inoltre, i commit saranno scritti seguendo
+      la convenzione \emph{Conventional Commits \footnote{\url{https://www.conventionalcommits.org/en/v1.0.0/}}};
+    \item \textbf{Versioning}: il versioning del software verrà gestito tramite un sistema di Continuous Integration
+      che si occuperà di generare automaticamente un numero di versione incrementale ogni volta che viene 
+      effettuato un commit sul branch principale; 
+    \item \textbf{Build e deploy}: anche la build e il deploy verranno gestiti tramite un sistema di Continuous 
+      Integration che si occuperà di effettuare la build del software e il deploy automatico in un ambiente di testing;
+    \item \textbf{Verifica del codice}: prima di poter effettuare un commit il codice verrà controllato da sistemi di 
+      linting, verifica di codice duplicato e code coverage. In caso il codice non rispetti i criteri definiti non sarà 
+      possibile effettuare il commit su uno dei branch principali ma solo su un branch secondario in attesa di essere
+      adattato.
+  \end{itemize}
 
   \newpage
   \section{Riassunto di tempi e risorse}

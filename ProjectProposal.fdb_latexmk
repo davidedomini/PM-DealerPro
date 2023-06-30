@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1688112059 "/Users/davidedomini/Desktop/PM-DealerPro/ProjectProposal.tex" "ProjectProposal.pdf" "ProjectProposal" 1688112059
-  "/Users/davidedomini/Desktop/PM-DealerPro/ProjectProposal.tex" 1688112058 8561 91f287811ba76e3a10c2954a4ebad748 ""
+["pdflatex"] 1688118216 "/Users/davidedomini/Desktop/PM-DealerPro/ProjectProposal.tex" "ProjectProposal.pdf" "ProjectProposal" 1688118216
+  "/Users/davidedomini/Desktop/PM-DealerPro/ProjectProposal.tex" 1688118215 9950 644e6f6aa35a80921dbac4f33f8cab83 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -143,10 +143,11 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653252013 2826442 3312d3343e9229fb9b017370c5a98242 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "ProjectProposal.aux" 1688112059 2818 1b2b433bf0078d00d27eadd71327aa9b "pdflatex"
-  "ProjectProposal.out" 1688112059 2304 05abc689a644623c1e800c3116943447 "pdflatex"
-  "ProjectProposal.tex" 1688112058 8561 91f287811ba76e3a10c2954a4ebad748 ""
-  "ProjectProposal.toc" 1688112059 1347 e175092fd995456904079ace4c504b21 "pdflatex"
+  "ProjectProposal.aux" 1688118216 3089 abe5aac06c002b9f81f605f2256ca0df "pdflatex"
+  "ProjectProposal.out" 1688118216 2304 05abc689a644623c1e800c3116943447 "pdflatex"
+  "ProjectProposal.tex" 1688118215 9950 644e6f6aa35a80921dbac4f33f8cab83 ""
+  "ProjectProposal.toc" 1688118216 1347 e175092fd995456904079ace4c504b21 "pdflatex"
+  "imgs/arch.png" 1688113585 62555 096d8affa70f53aa063d0f93fe48dead ""
   (generated)
   "ProjectProposal.aux"
   "ProjectProposal.log"

@@ -122,6 +122,14 @@
 
   \subsection{Panoramica}
   \subsection{Deliverables}
+
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{imgs/arch.png}
+    \caption{Architettura}
+    \label{fig:arch}
+  \end{figure}
+
   \subsection{Valore per l'impresa}
   \subsection{Punti di forza e rischi}
 
@@ -176,18 +184,43 @@
 
   \subsection{Stime delle risorse}
   \begin{itemize}
-    \item Risorse umane:
+    \item Risorse umane
     \begin{itemize}
       \item 1 Project Manager;
-      \item 4 sviluppatori senior;
-      \item 6 sviluppatori junior;
-      \item 2 sistemisti;
+      \item 3 sviluppatori senior;
+      \item 5 sviluppatori junior;
+      \item 1 sistemista;
       \item 1 graphic designer;
     \end{itemize}
     \item Risorse hardware
+    \begin{itemize}
+      \item 5 server di produzione (uno per ogni servizio);
+      \item 2 database di produzione;
+      \item 1 web server di frontend;
+      \item 1 server di testing;
+      \item 1 database di testing;
+    \end{itemize}
+    \item Altre risorse
+    \begin{itemize}
+      \item 1 sala riunioni;
+      \item Lavagne;
+      \item Pennarelli;
+      \item Post-it;
+      \item Software grafico per i mock-up;
+      \item Software per la gestione dei task del progetto (ad esempio, Trello).
+    \end{itemize}
   \end{itemize}
 
   \subsection{Stime dei tempi}
+
+  Dato il modello PMLC scelto (Evolutionary Development Waterfall) i task sono stati distribuiti secondo sprint
+    settimanali. Si è posta particolare attenzione sulle dipendenze tra i vari task e sulla distribuzione delle 
+    risorse in modo da non creare conflitti.
+    Le risorse sono state redistribuite e/o deallocate durante gli Sprint, al fine di minimizzare i costi 
+    ma massimizzare le prestazioni.
+    Una prima stima, indicativa, prevede 10 sprint per una durata complessiva di 10 settimane 
+    (tuttavia questa stima potrebbe cambiare durante lo svolgimento del progetto). 
+    Un riassunto completo e dettagliato dei vari task si trova nel documento \textcolor{teal}{DealerPro Sprints}.
 
 
 \end{document}

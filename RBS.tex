@@ -1,0 +1,159 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{natbib}
+\usepackage{soul}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[hyphens]{url}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{glossaries}
+\usepackage{hyperref}
+\usepackage{acronym}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{comment}
+\usepackage{xcolor}
+
+
+\newcommand{\emailaddr}[1]{\href{mailto:#1}{\texttt{#1}}}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+\renewcommand{\labelenumiv}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}
+
+\begin{document}
+\begin{titlepage}
+
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+  \center
+  
+  \textsc{\Large Department of Computer Science And Engineering}\\[0.5cm]
+  
+  \textsc{\Large University of Bologna}\\[0.6cm]
+  
+  \hrule width \hsize \kern 1mm \hrule width \hsize height 2pt 
+  \vspace{0.8cm}
+  { \large \bfseries DealerPro}\\[0.6cm]
+  { \large \bfseries Requirements Breakdown Structure}\\[0.6cm]
+  { \large Project Management}\\[0.6cm]
+  
+  
+  {\bfseries{June, 2023}
+  \hfill
+  \bfseries{Davide Domini}}\\[0.6cm]
+  
+  \hrule width \hsize height 2pt \kern 1mm \hrule width \hsize height 1pt
+  \vspace{0.4cm}
+  
+  \end{titlepage}
+
+  \clearpage
+  
+  \section{Requirements Breakdown Structure (RBS)}
+
+  Si precisa che un requisito è definito come completato (\textbf{DONE}) quando sono stati implementati i relativi test 
+  ed è stata redatta la relativa documentazione.
+
+  \begin{enumerate}
+    \item Sviluppo del client \textbf{Client Frontend}
+    \begin{enumerate}
+        \item Mock-up interfaccia utente
+        \item Sviluppo interfaccia utente
+        \item Integrazione con i microservizi in cloud
+        \begin{enumerate}
+            \item Autenticazione
+            \item Gestione vendite
+            \item Gestione clienti
+            \item Gestione dipendenti
+            \item Resoconti e dati aggregati per i manager
+        \end{enumerate}
+    \end{enumerate}
+    \item Sviluppo servizio di autenticazione \textbf{Auth Service}
+    \begin{enumerate}
+        \item Creazione del database per la gestione degli account utenti
+        \item Sviluppo del meccanismo di token
+        \item Sviluppo del meccanismo di criptazione dei dati
+        \item Sviluppo API
+    \end{enumerate}
+    \item Implementazione servizio di gestione dipendenti \textbf{Employee Service}
+    \begin{enumerate}
+        \item Logica interna
+        \begin{enumerate}
+            \item Sviluppo gestione ferie dipendenti
+            \begin{enumerate}
+                \item Sviluppo inserimento nuovo piano ferie
+                \item Sviluppo modifica piano ferie
+                \item Sviluppo approvazione piano ferie
+            \end{enumerate}
+            \item Sviluppo gestione permessi dipendenti
+            \begin{enumerate}
+                \item Sviluppo inserimento richiesta permesso
+                \item Sviluppo modifica richiesta permesso
+                \item Sviluppo approvazione richiesta permesso
+            \end{enumerate}
+        \end{enumerate}
+
+        \item Sviluppo API
+    \end{enumerate}
+    \item Implementazione servizio di gestione vendite \textbf{Dealer Service}
+    \begin{enumerate}
+        \item Logica interna
+        \begin{enumerate}
+            \item Sviluppo gestione vendite
+            \begin{enumerate}
+                \item Sviluppo inserimento nuovo preventivo
+                \item Sviluppo modidica preventivo esistente
+            \end{enumerate}
+            \item Sviluppo gestione ordini
+            \begin{enumerate}
+                \item Sviluppo inserimento nuovo ordine
+                \item Sviluppo verifica stato ordine effettuato
+            \end{enumerate}
+        \end{enumerate}
+        \item Sviluppo API
+    \end{enumerate}
+    \item Implementazione servizio di gestione clienti \textbf{Customer Service}
+    \begin{enumerate}
+        \item Logica interna
+            \begin{enumerate}
+                \item Sviluppo gestione appuntamenti periodici
+                \begin{enumerate}
+                    \item Sviluppo meccanismo di notifica alla segreteria
+                    \item Sviluppo gestione periodicità future 
+                \end{enumerate}
+                \item Sviluppo gestione nuovi appuntamenti non-periodici
+            \end{enumerate} 
+        \item Sviluppo API
+    \end{enumerate}
+    \item Implementazione servizio di resoconti e dati 
+        aggregati per i manager \textbf{Manager Service}
+        \begin{enumerate}
+            \item Logica interna
+            \begin{enumerate}
+                \item Sviluppo metodi di aggregazione dei dati
+                \item Sviluppo meccanismo di personalizzazione dei report   
+            \end{enumerate}
+            \item Sviluppo API
+        \end{enumerate}
+    \item Redazione manuale utente
+    \begin{enumerate}
+        \item Guida alla personalizzazione dei report da parte dei manager
+        \item Guida all'inserimento dei vari dati utili da parte dei dipendenti
+        \item Guida all'autenticazione sicura
+        \begin{enumerate}
+            \item Scelta della password
+            \item Cambio periodico della password
+        \end{enumerate}
+    \end{enumerate}
+    \end{enumerate}
+
+
+ 
+
+
+\end{document}

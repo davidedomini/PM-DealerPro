@@ -1,0 +1,147 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{natbib}
+\usepackage{soul}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[hyphens]{url}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{glossaries}
+\usepackage{hyperref}
+\usepackage{acronym}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{comment}
+\usepackage{xcolor}
+
+
+\newcommand{\emailaddr}[1]{\href{mailto:#1}{\texttt{#1}}}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+\renewcommand{\labelenumiv}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}
+
+\begin{document}
+\begin{titlepage}
+
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+  \center
+  
+  \textsc{\Large Department of Computer Science And Engineering}\\[0.5cm]
+  
+  \textsc{\Large University of Bologna}\\[0.6cm]
+  
+  \hrule width \hsize \kern 1mm \hrule width \hsize height 2pt 
+  \vspace{0.8cm}
+  { \large \bfseries DealerPro}\\[0.6cm]
+  { \large \bfseries Project Overview Statement}\\[0.6cm]
+  { \large Project Management}\\[0.6cm]
+  
+  
+  {\bfseries{June, 2023}
+  \hfill
+  \bfseries{Davide Domini}}\\[0.6cm]
+  
+  \hrule width \hsize height 2pt \kern 1mm \hrule width \hsize height 1pt
+  \vspace{0.4cm}
+  
+  \end{titlepage}
+
+  \clearpage
+  
+  \section*{Problema/Opportunità}
+  La gestione di una concessionaria di auto comporta una serie di processi ricorrenti e standardizzati che 
+    vengono svolti dai dipendenti. Una nota concessionaria romagnola, composta da tre sedi, ha deciso di 
+    rinnovare il proprio sistema informatico in quanto ritenuto ormai obsoleto.
+
+  Il sistema attuale è stato sviluppato negli anni, in maniera frammentata, da diversi team di sviluppatori.
+    Oltretutto, le attuali sedi che compongono l'azienda, in principio, erano indipendenti e sono state acquisite
+    nel tempo. Questo aspetto ha portato il sistema informatico ad essere ancor più disomogeneo rendendo difficile 
+    e tediosa l'integrazione dei dati delle diverse sedi.
+
+  Tra i principali limiti del sistema attuale dunque troviamo:
+  \begin{itemize}
+    \item Scarsa capacità di fornire ai manager informazioni utili e aggregate per prendere decisioni strategiche;
+    \item Lentezza e limitata user-experience per i dipendenti, questo causa in loro frustrazione e scarsa produttività. 
+    \item Spesso i dipendenti inseriscono solo informazioni parziali o non aggiornate, questo causa una scarsa qualità dei dati;
+    \item I dipendenti sono costretti a svolgere attività ripetitive e manuali che potrebbero essere automatizzate;
+    \item Scarsa organizzazione interna (ad esempio, ferie e permessi dei dipendenti);
+    \item Manca totalmente un sistema di gestione dei clienti per quanto riguarda gli appuntamenti periodici 
+    (ad esempio, per il tagliando).
+  \end{itemize}
+
+  Le opportunità di business di questo progetto sono presenti sia per il committente che per il team di sviluppo. Il cliente potrà
+    rinnovare e automatizzare i processi interni, aumentare la soddisfazione dei dipendenti e dei clienti, avere un
+    monitoring più pervasivo dei risultati aziendali facilitando il lavoro dei manager. 
+    Il team di svilupp, invece, potrà acquisire nuove competenze e conoscenze su un nuovo dominio applicativo che potrebbe portare a vendere
+    un servizio molto simile anche ad altre aziende del settore.
+
+
+  \section*{Obbiettivi del progetto}
+
+  L'obbiettivo di questo progetto è realizzare un sistema software volto ad automatizzare e migliorare 
+    i processi interni di una concessionaria di auto.
+    Il principio chiave di DealerPro è la semplicità di utilizzo, questa permetterà di aumentare la 
+    soddisfazione e l'efficienza dei dipendenti andando, di conseguenza, a migliorare anche la qualità
+    del servizio offerto ai clienti della consessionaria.
+
+  La soluzione finale adotterà un modello a microservizi collocati in cloud, questo permetterà alla
+    consessionaria di non dover gestire un'infrastruttura interna, inoltre essendo un dominio altamente
+    standardizzato sotto molti punti di vista sarà possibile vendere l'applicativo anche ad altre 
+    consessionarie riducendo il prezzo di vendita alla singola azienda.
+ 
+  \section*{Importanza degli obbiettivi}
+  Per ogni obiettivo viene indicata una percentuale, la quale rappresenta l’importanza associata in
+    termini di Scope e Budget.
+    \begin{itemize}
+        \item \textbf{[15\%]} Sviluppo del client mediante il quale gli utenti potranno interagire con il sistema;
+        \item \textbf{[10\%]} Sviluppo del sistema di autenticazione;
+        \item \textbf{[10\%]} Sviluppo del sistema di gestione dei dipendenti;
+        \item \textbf{[10\%]} Sviluppo del sistema di gestione dei clienti;
+        \item \textbf{[15\%]} Sviluppo del sistema di gestione delle vendite;
+        \item \textbf{[25\%]} Sviluppo del sistema di monitoring per i manager;
+        \item \textbf{[10\%]} Documentazione dei vari microservizi;
+        \item \textbf{[5\%]} Manuale utente.
+    \end{itemize}
+  \section*{Criteri di successo}
+
+  \begin{itemize}
+    \item Aumento delle entrate derivanti da una maggiore organizzazione ed efficienza dei processi aziendali
+        (ad esempio, gli appuntamenti);
+    \item Costi della manutenzione del sistema ridotti in quanto non è più necessario avere 
+        un'infrastruttura interna;
+    \item Miglioramento del servizio offerto ai clienti.
+  \end{itemize}
+
+
+
+
+  \section*{Premesse}
+  \begin{itemize}
+    \item La concessionaria è dotata di una connessione ad internet e di dispositivi hardware adeguati;
+    \item Si disporrà di un team sufficientemente numeroso e competente per poter realizzare il progetto;
+    \item Sarà utilizzata un'infrastruttura Cloud;
+    \item Sarà garantita la presenza di esperti del dominio;
+    \item Essendo il progetto commissionato da un cliente, le deadline saranno stringenti e potranno 
+        essere fatte solo rare eccezioni;
+    \item Verranno individuati nuovi potenziali acquirenti.
+  \end{itemize}
+
+  \section*{Rischi}
+  L'analisi dei rischi è presente nel documento \textcolor{teal}{DealerPro Risk Analysis}.
+
+  \section*{Ostacoli}
+  \begin{itemize}
+    \item Non saranno individuate altre aziende disposte a comprare il servizio;
+    \item Il tempo di learning dei dipendenti sarà troppo lungo.
+  \end{itemize}
+
+ 
+
+
+\end{document}

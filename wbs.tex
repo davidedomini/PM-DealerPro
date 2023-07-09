@@ -1,0 +1,238 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{natbib}
+\usepackage{soul}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[hyphens]{url}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{color}
+\usepackage{textpos}
+\usepackage{glossaries}
+\usepackage{hyperref}
+\usepackage{acronym}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{comment}
+\usepackage{xcolor}
+
+
+\newcommand{\emailaddr}[1]{\href{mailto:#1}{\texttt{#1}}}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
+\renewcommand{\labelenumiv}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv}}
+
+\begin{document}
+\begin{titlepage}
+
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+  \center
+  
+  \textsc{\Large Department of Computer Science And Engineering}\\[0.5cm]
+  
+  \textsc{\Large University of Bologna}\\[0.6cm]
+  
+  \hrule width \hsize \kern 1mm \hrule width \hsize height 2pt 
+  \vspace{0.8cm}
+  { \large \bfseries DealerPro}\\[0.6cm]
+  { \large \bfseries Work Breakdown Structure}\\[0.6cm]
+  { \large Project Management}\\[0.6cm]
+  
+  
+  {\bfseries{June, 2023}
+  \hfill
+  \bfseries{Davide Domini}}\\[0.6cm]
+  
+  \hrule width \hsize height 2pt \kern 1mm \hrule width \hsize height 1pt
+  \vspace{0.4cm}
+  
+  \end{titlepage}
+
+  \clearpage
+  
+  \section{Work Breakdown Structure (WBS)}
+
+  Le attività sono denotate in \textbf{grassetto}.
+
+    \begin{enumerate}
+        \item Sviluppo del client: Client Frontend
+        \begin{enumerate}
+            \item Mock-up interfaccia utente
+            \begin{enumerate}
+                \item \textbf{Mock-up interfaccia login}
+                \item \textbf{Mock-up interfaccia registrazione nuovo utente}
+                \item \textbf{Mock-up interfaccia gestione dipendenti}
+                \begin{enumerate}
+                    \item \textbf{Mock-up interfaccia inserimento nuovo piano ferie}
+                    \item \textbf{Mock-up interfaccia modifica piano ferie}
+                    \item \textbf{Mock-up interfaccia approvazione piano ferie}
+                    \item \textbf{Mock-up interfaccia inserimento nuova richiesta di permesso}
+                    \item \textbf{Mock-up interfaccia modifica richiesta di permesso}
+                    \item \textbf{Mock-up interfaccia approvazione richiesta di permesso}
+                \end{enumerate}
+                \item \textbf{Mock-up interfaccia gestione vendite}
+                \begin{enumerate}
+                    \item \textbf{Mock-up interfaccia inserimento nuovo preventivo}
+                    \item \textbf{Mock-up interfaccia modifica preventivo}
+                    \item \textbf{Mock-up interfaccia inserimento nuovo ordine}
+                    \item \textbf{Mock-up interfaccia verifica stato ordine}
+                \end{enumerate}
+                \item \textbf{Mock-up interfaccia gestione clienti}
+                \begin{enumerate}
+                    \item \textbf{Mock-up interfaccia notifica appuntamenti periodici}
+                    \item \textbf{Mock-up interfaccia inserimento nuove periodicità future}
+                    \item \textbf{Mock-up interfaccia gestione appuntamenti non periodici}
+                \end{enumerate}
+                \item \textbf{Mock-up interfaccia gestione resoconti e dati aggregati}
+            \end{enumerate}
+            \item Sviluppo interfaccia utente
+            \begin{enumerate}
+                \item \textbf{Sviluppo interfaccia login}
+                \item \textbf{Sviluppo interfaccia registrazione nuovo utente}
+                \item \textbf{Sviluppo interfaccia gestione dipendenti}
+                \begin{enumerate}
+                    \item \textbf{Sviluppo interfaccia inserimento nuovo piano ferie}
+                    \item \textbf{Sviluppo interfaccia modifica piano ferie}
+                    \item \textbf{Sviluppo interfaccia approvazione piano ferie}
+                    \item \textbf{Sviluppo interfaccia inserimento nuova richiesta di permesso}
+                    \item \textbf{Sviluppo interfaccia modifica richiesta di permesso}
+                    \item \textbf{Sviluppo interfaccia approvazione richiesta di permesso}
+                \end{enumerate}
+                \item \textbf{Sviluppo interfaccia gestione vendite}
+                \begin{enumerate}
+                    \item \textbf{Sviluppo interfaccia inserimento nuovo preventivo}
+                    \item \textbf{Sviluppo interfaccia modifica preventivo}
+                    \item \textbf{Sviluppo interfaccia inserimento nuovo ordine}
+                    \item \textbf{Sviluppo interfaccia verifica stato ordine}
+                \end{enumerate}
+                \item \textbf{Sviluppo interfaccia gestione clienti}
+                \begin{enumerate}
+                    \item \textbf{Sviluppo interfaccia notifica appuntamenti periodici}
+                    \item \textbf{Sviluppo interfaccia inserimento nuove periodicità future}
+                    \item \textbf{Sviluppo interfaccia gestione appuntamenti non periodici}
+                \end{enumerate}
+                \item \textbf{Sviluppo interfaccia gestione resoconti e dati aggregati}
+            \end{enumerate}
+            \item Integrazione con i microservizi in cloud
+            \begin{enumerate}
+                \item \textbf{Implementazione chiamate HTTP per autenticazione}
+                \item \textbf{Implementazione chiamate HTTP per gestione vendite}
+                \item \textbf{Implementazione chiamate HTTP per gestione clienti}
+                \item \textbf{Implementazione chiamate HTTP per gestione dipendenti}
+                \item \textbf{Implementazione chiamate HTTP per resoconti e dati aggregati}
+            \end{enumerate}
+        \end{enumerate}
+        \item Sviluppo servizio di autenticazione: Auth Service
+        \begin{enumerate}
+            \item Creazione del database la gestione degli account utente
+            \begin{enumerate}
+                \item \textbf{Progettazione concettuale}
+                \item \textbf{Progettazione logica}
+                \item \textbf{Progettazione fisica}
+            \end{enumerate}
+            \item \textbf{Sviluppo di meccanismo di generazione dei token}
+            \item \textbf{Sviluppo di meccanismo di criptazione dei dati}
+            \item Sviluppo API
+            \begin{enumerate}
+                \item \textbf{Implementazione metodo HTTP per autenticare un utente}
+                \item \textbf{Implementazione metodo HTTP per registrare un nuovo utente}
+                \item \textbf{Implementazione metodo HTTP per cambiare la password di un utente}
+            \end{enumerate}
+        \end{enumerate}
+        \item Implementazione servizio di gestione dipendenti: Employee Service
+        \begin{enumerate}
+            \item Creazione del database
+            \begin{enumerate}
+                \item \textbf{Progettazione concettuale}
+                \item \textbf{Progettazione logica}
+                \item \textbf{Progettazione fisica}
+            \end{enumerate}
+            \item Gestione ferie dei dipendenti
+            \begin{enumerate}
+                \item \textbf{Implementazione metodo HTTP per inserimento nuovo piano ferie}
+                \item \textbf{Implementazione metodo HTTP per modifica piano ferie}
+                \item \textbf{Implementazione metodo HTTP per approvazione piano ferie}
+            \end{enumerate}
+            \item Gestione permessi dei dipendenti
+            \begin{enumerate}
+                \item \textbf{Implementazione metodo HTTP per inserimento nuova richiesta di permesso}
+                \item \textbf{Implementazione metodo HTTP per modifica richiesta di permesso}
+                \item \textbf{Implementazione metodo HTTP per approvazione richiesta di permesso}
+            \end{enumerate}
+        \end{enumerate}
+        \item Implementazione servizio di gestione vendite: Dealer Service
+        \begin{enumerate}
+            \item Creazione del database
+            \begin{enumerate}
+                \item \textbf{Progettazione concettuale}
+                \item \textbf{Progettazione logica}
+                \item \textbf{Progettazione fisica}
+            \end{enumerate}
+            \item Gestione preventivi
+            \begin{enumerate}
+                \item \textbf{Implementazione metodo HTTP per inserimento nuovo preventivo}
+                \item \textbf{Implementazione metodo HTTP per modifica preventivo}
+            \end{enumerate}
+            \item Gestione ordini
+            \begin{enumerate}
+                \item \textbf{Implementazione metodo HTTP per inserimento nuovo ordine}
+                \item \textbf{Implementazione metodo HTTP per verifica stato ordine}
+            \end{enumerate}
+        \end{enumerate}
+        \item Implementazione servizio di gestione clienti: Customer Service
+        \begin{enumerate}
+            \item Creazione del database
+            \begin{enumerate}
+                \item \textbf{Progettazione concettuale}
+                \item \textbf{Progettazione logica}
+                \item \textbf{Progettazione fisica}
+            \end{enumerate}
+            \item Gestione appuntamenti periodici
+            \begin{enumerate}
+                \item \textbf{Implementazione metodo HTTP per inserimento nuovo appuntamento}
+                \item \textbf{Implementazione metodo di notifica alla segreteria}
+            \end{enumerate}
+            \item Gestione appuntamenti non periodici
+            \begin{enumerate}
+                \item \textbf{Implementazione metodo HTTP per inserimento nuovo appuntamento}
+                \item \textbf{Implementazione metodo HTTP per modifica appuntamento}
+            \end{enumerate}
+        \end{enumerate}
+        \item Implementazione servizio di resoconti e dati aggregati per i manager: Manager Service
+        \begin{enumerate}
+            \item Creazione del database
+            \begin{enumerate}
+                \item \textbf{Progettazione concettuale}
+                \item \textbf{Progettazione logica}
+                \item \textbf{Progettazione fisica}
+            \end{enumerate}
+            \item Aggregazione dati
+            \begin{enumerate}
+                \item \textbf{Sviluppo algoritmi di aggregazione dati}
+            \end{enumerate}
+            \item Personalizzazione dei report
+            \begin{enumerate}
+                \item \textbf{Implementazione meccanismo per scegliere quali report visualizzare e come visualizzarli}
+            \end{enumerate}
+        \end{enumerate}
+        \item Redazione manuale utente
+        \begin{enumerate}
+            \item \textbf{Guida alla personalizzazione dei report da parte dei manager}
+            \item \textbf{Guida all'inserimento dei vari dati utili da parte dei dipendenti}
+            \item Guida all'autenticazione sicura
+            \begin{enumerate}
+                \item \textbf{Scelta della password}
+                \item \textbf{Cambio periodico della password}
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+
+
+ 
+
+
+\end{document}

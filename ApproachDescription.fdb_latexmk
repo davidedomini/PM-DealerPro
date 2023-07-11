@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1689069198 "/Users/davidedomini/Desktop/PM-DealerPro/ApproachDescription.tex" "ApproachDescription.pdf" "ApproachDescription" 1689069199
-  "/Users/davidedomini/Desktop/PM-DealerPro/ApproachDescription.tex" 1689069198 25009 937e32d241b12bf457758aa6cc0972e5 ""
+["pdflatex"] 1689079900 "/Users/davidedomini/Desktop/PM-DealerPro/ApproachDescription.tex" "ApproachDescription.pdf" "ApproachDescription" 1689079901
+  "/Users/davidedomini/Desktop/PM-DealerPro/ApproachDescription.tex" 1689079900 27037 c201f12f881cbf2b93b7657eb73978f5 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -132,10 +132,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653252013 2826442 3312d3343e9229fb9b017370c5a98242 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "ApproachDescription.aux" 1689069198 3838 17f37016c20bb3a49c6cf8c094bf057a "pdflatex"
-  "ApproachDescription.out" 1689069198 3954 102ebbf52dbd9064c43044123d532138 "pdflatex"
-  "ApproachDescription.tex" 1689069198 25009 937e32d241b12bf457758aa6cc0972e5 ""
-  "ApproachDescription.toc" 1689069198 2079 81845619810c81a16eb2ccb160d842b8 "pdflatex"
+  "ApproachDescription.aux" 1689079901 4109 4e90a56e813beae3147a850ae6b669b4 "pdflatex"
+  "ApproachDescription.out" 1689079901 4357 3548b58dfdd1d0731443a8f2855b3a7e "pdflatex"
+  "ApproachDescription.tex" 1689079900 27037 c201f12f881cbf2b93b7657eb73978f5 ""
+  "ApproachDescription.toc" 1689079901 2268 4fab50b5f10fae51072f2a4a243ad3ac "pdflatex"
   (generated)
   "ApproachDescription.aux"
   "ApproachDescription.log"

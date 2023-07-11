@@ -378,11 +378,11 @@
   \subsection{Recruiting/staffing}
 
   \begin{itemize}
-    \item \textbf{Core team}: team composto da 3 programmatori senior;
+    \item \textbf{Core team}: team composto da 2 programmatori senior;
     \item \textbf{Project manager}: ruolo ricoperto dallo stesso manager che ha presenziato 
       durante le riunioni di scoping e planning;
     \item \textbf{Co-project manager}: membro del core team che affianca il project manager;
-    \item \textbf{Developer team}: 5 sviluppatori junior;
+    \item \textbf{Developer team}: 3 sviluppatori junior;
     \item \textbf{Client team}: membri identificati dal cliente, questi forniscono feedback sui 
       risultati ottenuti ad ogni sprint in modo da indenficare quanto prima eventuali problemi;
     \item \textbf{Contracted team}: libero professionista a contratto che si è occupato di 
@@ -395,8 +395,8 @@
     \item \textbf{Partecipanti}: 
     \begin{itemize}
       \item 1 project manager
-      \item 3 programmatori senior
-      \item 5 programmatori junior
+      \item 2 programmatori senior
+      \item 3 programmatori junior
       \item 1 tecnografo
       \item 1 UI designer
       \item Client team
@@ -434,14 +434,60 @@
   \subsubsection{Regole operative per il team}
 
   \paragraph{Riunioni}
+
+  \begin{itemize}
+    \item \textbf{Project review meeting}: riunione condotta all'inzio di ogni settimana. Durante questa riunione vengono 
+      discussi i risultati dello sprint precedente e vengono pianificate le attività da svolgere durante lo sprint corrente;
+    \item \textbf{15 minutes daily status meeting}: riunione condotta ogni giorno ad inizio mattinata. Durante questa riunione  
+      ogni membro del team discute brevemente il lavoro svolto il giorno prima, quello che prevede di svolgere il giorno corrente e
+      se è presente qualche difficoltà nel raggiungere gli obbiettivi;
+    \item \textbf{Problem resolution meeting}: riunioni che vengono condotte solo in caso di evenienza, sono volte a risolvere un particolare
+      problema che si è presentato durante lo svolgimento del progetto. A queste riunioni partecipano solo i membri che sono coinvolti
+      direttamente nel problema. Solo in casi estremi, in cui non si riesce in nessun modo a trovare una soluzione potranno essere convocati
+      anche gli altri membri.
+  \end{itemize}
+
   \paragraph{Modalità di comunicazione}
-  \paragraph{Strategia di version control}
+  \begin{itemize}
+    \item \textbf{Task svolti}: per la gestione dei task verrà usato uno specifico software -- \emph{Trello} --
+      che permette di gestire una board dove classificare un task in base al suo stato e di notificare in automatico
+      gli altri membri del team in caso di cambiamento di stato. Per esempio, una volta finito un task questo dovrà 
+      essere spostato nella colonna \emph{Done};
+    \item \textbf{Comunicazioni generiche}: per qualsiasi altra comunicazione riguardante il progetto, invece, verrà
+      utilizzata un'apposita applicazione di messagistica istantanea -- \emph{Slack} -- che permette di creare canali 
+      dedicati in base al topic.
+  \end{itemize}
+
 
   \subsubsection{Piano per la qualità}
+  Si è deciso di adottare le seguenti Good Practices per raggiungere l'obbiettivo dell'eccellenza tecnica:
+  \begin{itemize}
+    \item Utilizzo di un repository per ogni sottoprogetto;
+    \item Utilizzo di GitFlow all'interno di ogni repository;
+    \item Utilizzo di Conventional Commits per la scrittura dei commit;
+    \item Commit scritti rigorosamente in inglese;
+    \item Utilizzo di firma dei commit con chiave GPG;
+    \item Utilizzo di un sistema di CI/CD per l'automazione dei test e del deploy;
+    \item Utilizzo di un build tool per la risoluzione delle dipendenze date da librerie esterne;
+    \item Utilizzo di sistema automatico per la gestione dell'update delle versioni delle librerie esterne;
+    \item Inclusione della documentazione in ogni repository;
+    \item Scrittura di commenti all’interno del codice seguendo le convenzioni del linguaggio;
+    \item Utilizzo di pattern di programmazione consolidati per garantire riusabilità, scalabilità ed estensibilità
+      del codice;
+    \item Controllo automatico della compatibilità di tutte le licenze utilizzate;
+    \item Conteinerizzazione del codice;
+    \item Adozione di un linter automatico per la formattazione del codice seguendo le convenzioni del
+      linguaggio;
+    \item Utilizzo di un tool per l’identificazione di codice ripetuto all’interno dello stesso progetto.
+  \end{itemize}
 
 
   \newpage
   \section{Monitoring/Controlling}
+
+  
+
+
 
   \newpage
   \section{Closing}
